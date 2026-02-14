@@ -89,45 +89,87 @@ The file includes complete documentation comments explaining:
 
 ## 🔄 Git Requirements Completed
 
-### ✅ 5 Meaningful Commits
 
-Examples of commits included in this project:
+### ✅ Commit 1 – UI Enhancement
+- Improved `activity_main.xml` layout
+- Added padding and spacing for better UI design
+- Implemented ScrollView to support multiple profiles
 
-1. Initial project setup with Android Studio structure
-2. Added Profile data class
-3. Implemented profile adding functionality
-4. Added input validation and Toast messages
-5. Updated documentation and README file
+Branch:
+feature-ui-enhancement
 
-Each commit contains clear and descriptive messages.
+---
 
+### ✅ Commit 2 – Input Validation
+- Added validation to prevent empty Name and Age fields
+- Displayed Toast message for invalid input
+- Improved overall user experience
+
+Branch:
+feature-input-validation
+
+---
+
+### ✅ Commit 3 – Structured Profile Display
+- Improved profile output formatting
+- Added numbered profile listing
+- Used StringBuilder for better string handling
+
+Branch:
+feature-display-formatting
+
+---
+
+### ✅ Commit 4 – Profile Model Improvement
+- Refactored `Profile.java`
+- Implemented proper encapsulation
+- Added getter methods for clean data access
+
+Branch:
+feature-profile-improvement
+
+---
+
+### ✅ Commit 5 – Code Documentation
+- Added descriptive comments in `MainActivity.java`
+- Improved readability and maintainability
+- Updated README documentation
+
+Branch:
+docs-update-readme
 ---
 
 ### ✅ 3 Pull Requests (Merged)
 
-1. Feature branch for Profile data model
-2. Feature branch for profile list logic implementation
-3. Feature branch for documentation and UI improvements
+### ✅ Pull Request 1 – UI Layout Refactor
+**Branch:** `feature-layout-refactor`
 
-All pull requests were reviewed and merged into the main branch.
-
----
-
-## 📸 Sample App Flow
-
-1. User enters name and age
-2. Clicks “Add Profile”
-3. Profile appears in list
-4. Toast confirms successful addition
+Improvements:
+- Added ScrollView for better scrolling support
+- Improved padding and spacing
+- Increased text sizes for better readability
+- Cleaned layout structure
 
 ---
 
-## 📌 Conclusion
+### ✅ Pull Request 2 – Profile Logic Enhancement
+**Branch:** `feature-profile-logic-enhancement`
 
-ProfileListApp successfully meets all the requirements of MAD302 Lab 1:
+Improvements:
+- Added input validation for empty fields
+- Implemented structured profile display formatting
+- Improved StringBuilder usage for cleaner output
+- Cleared input fields after profile submission
 
-* One screen application
-* Data class implementation
-* Java-based Android development
-* Proper Git workflow
-* Professional documentation
+---
+
+### ✅ Pull Request 3 – Profile Model Refactor
+**Branch:** `refactor-profile-class`
+
+Improvements:
+- Added class and method documentation
+- Implemented `toString()` method
+- Improved readability and maintainability
+- Followed clean coding practices
+
+---
