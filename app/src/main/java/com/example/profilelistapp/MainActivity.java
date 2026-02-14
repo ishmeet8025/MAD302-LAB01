@@ -3,17 +3,24 @@
  * Lab 01
  * Name: Ishmeet Singh
  * Student ID: A00202436
+ * Date: Feb 14 2026
  *
  * Description:
- * Profile List Android App using Java.
+ * Simple Android Java application that allows user to enter
+ * Name and Age, store profiles in ArrayList and display them.
+ * Lifecycle methods are logged.
  */
 
 package com.example.profilelistapp;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.*;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etName, etAge;
     Button btnAdd;
     TextView tvProfiles;
+
     ArrayList<Profile> profiles = new ArrayList<>();
 
     @Override
@@ -35,19 +43,26 @@ public class MainActivity extends AppCompatActivity {
         tvProfiles = findViewById(R.id.tvProfiles);
 
         btnAdd.setOnClickListener(v -> {
+
             String name = etName.getText().toString();
             int age = Integer.parseInt(etAge.getText().toString());
-            profiles.add(new Profile(name, age));
-            display();
+
+            Profile profile = new Profile(name, age);
+            profiles.add(profile);
+
+            displayProfiles();
         });
     }
 
-    private void display(){
-        StringBuilder sb = new StringBuilder();
-        for(Profile p:profiles){
-            sb.append(p.name+" – "+p.age+"\n");
+    /**
+     * Displays profiles using for loop
+     */
+    private void displayProfiles(){
+        StringBuilder builder = new StringBuilder();
+        for(Profile p : profiles){
+            builder.append(p.name + " – " + p.age + "\n");
         }
-        tvProfiles.setText(sb.toString());
+        tvProfiles.setText(builder.toString());
     }
 
     protected void onStart(){super.onStart();Log.d("Lifecycle","onStart");}

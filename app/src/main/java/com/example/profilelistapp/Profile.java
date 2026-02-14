@@ -1,9 +1,15 @@
 /**
- * Profile data class representing user information.
+ * Profile class
  */
 package com.example.profilelistapp;
+
 public class Profile {
+
     public String name;
     public int age;
-    public Profile(String n,int a){name=n;age=a;}
+
+    public Profile(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
 }
