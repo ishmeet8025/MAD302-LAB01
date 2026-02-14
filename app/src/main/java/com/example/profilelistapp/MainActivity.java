@@ -1,3 +1,6 @@
+// List to store user profiles
+// Retrieve UI elements
+// Validate user input before adding profile
 package com.example.profilelistapp;
 
 import android.os.Bundle;
