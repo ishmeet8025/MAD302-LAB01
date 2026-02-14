@@ -4,7 +4,7 @@
  * Name: Ishmeet Singh
  * Student ID: A00202436
  *
- * Documentation file only.
+ * Documentation placeholder file.
  */
 
 public class Main {

@@ -6,8 +6,8 @@
  * Date: Feb 14 2026
  *
  * Description:
- * Simple Android Java application that allows user to enter
- * Name and Age, store profiles in ArrayList and display them.
+ * This Android application allows users to enter Name and Age,
+ * add profiles to an ArrayList, and display them in a TextView.
  * Lifecycle methods are logged.
  */
 
@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         tvProfiles = findViewById(R.id.tvProfiles);
 
         btnAdd.setOnClickListener(v -> {
-
             String name = etName.getText().toString();
             int age = Integer.parseInt(etAge.getText().toString());
 
@@ -55,12 +54,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays profiles using for loop
+     * Displays profiles using a for loop
      */
     private void displayProfiles(){
         StringBuilder builder = new StringBuilder();
         for(Profile p : profiles){
-            builder.append(p.name + " – " + p.age + "\n");
+            builder.append(p.name).append(" – ").append(p.age).append("\n");
         }
         tvProfiles.setText(builder.toString());
     }

@@ -1,5 +1,5 @@
 /**
- * Profile class
+ * Profile class to store name and age
  */
 package com.example.profilelistapp;
 
