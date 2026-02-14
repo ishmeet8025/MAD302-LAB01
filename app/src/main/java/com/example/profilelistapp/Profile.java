@@ -1,3 +1,6 @@
+/**
+ * Profile data class representing user information.
+ */
 package com.example.profilelistapp;
 public class Profile {
     public String name;
