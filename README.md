@@ -135,8 +135,6 @@ feature-profile-improvement
 - Improved readability and maintainability
 - Updated README documentation
 
-Branch:
-docs-update-readme
 ---
 
 ### ✅ 3 Pull Requests (Merged)
